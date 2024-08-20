@@ -434,6 +434,9 @@ body.login {
   border: none;
   outline: none;
 }
+.banner--btn {
+  margin-top: 30px;
+}
 .btn--small {
   font-size: 0.88rem;
   padding: 7px 13px;
@@ -870,25 +873,35 @@ body.login {
     display: inline-block;
     padding: 0;
   }
+  .main-navigation .current-menu-item a,
+  .main-navigation a:hover {
+    color: #ed0303;
+    transition: transform 0.2s;
+    transform: scale(1.2);
+  }
 }
 .main-navigation .current-menu-item a,
 .main-navigation a:hover {
-  color: #faf0ca;
+  color: #ed0303;
+  transition: transform 0.2s;
 }
 .page-banner {
   background-color: #000;
   position: relative;
+  display: flex;
+  align-items: center;
   height: 100vh;
 }
 /*media for devices after cellphonez*/
 @media (min-width: 320px) {
-  .page-banner {
+  /*.page-banner {
     padding: 130px 0 60px 0;
-  }
+  }*/
 }
 .page-banner__content {
   position: relative;
   z-index: 2;
+  height: 300px;
 }
 .page-banner__title {
   font-family: "Roboto Condensed", sans-serif;
@@ -1187,28 +1200,28 @@ body.admin-bar .search-overlay {
 }
 .headline {
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 .headline--large {
-  font-size: 3.6rem;
+  font-size: 2.4rem;
 }
 @media (min-width: 530px) {
   .headline--large {
-    font-size: 6.25rem;
+    font-size: 3.25rem;
   }
 }
 .headline--large-medium {
-  font-size: 5rem;
+  font-size: 2.8rem;
   margin: 0 0 1rem 0;
 }
 .headline--medium {
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   margin-bottom: 0.75rem;
+  margin: 1rem 0 1rem 0;
 }
 @media (min-width: 530px) {
   .headline--medium {
-    font-size: 3.125rem;
+    font-size: 2.125rem;
   }
 }
 .headline--small-plus {
