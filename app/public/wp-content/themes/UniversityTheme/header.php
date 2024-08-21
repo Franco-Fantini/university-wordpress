@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes() ?>>
 
 <head>
     <?php wp_head(); ?>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset') ?>">
     <meta name="keywords" content="HTML, CSS, JavaScript, PHP, WordpressCore">
     <meta name="author" content="Franco Fantini">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body <?php body_class() ?>>
     <header class="site-header">
         <div class="container">
             <h2 class="school-logo-text float-left">
