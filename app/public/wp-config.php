@@ -22,7 +22,6 @@
 // ** MySQL settings ** //
 /** The name of the database for WordPress */
 define('DB_NAME', 'local');
-
 /** MySQL database username */
 define('DB_USER', 'root');
 
@@ -47,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'Gr2Apg9KETjfyzyD6qiZy9SRD7uDUK1OojtWKtiaQF7W4oZi9nYZgiRZjlp7rC9XSLxB4I/ipd8anyUWz8WRFg==');
-define('SECURE_AUTH_KEY',  'ZLgmxw7HrcNm+w916Z5WM5tbGBO0E1s5r3moqgHMOjhp1JK5qvE/o43Q0yrRcEsQvka6N27GBEuqKBd07hLCJA==');
-define('LOGGED_IN_KEY',    'IWNy35mtJanQYfXj4X06meCEMZPCoFbkPzdfvBzrAgH7NII0TD/WaNNJFbUZNS2lgCojnPdnnfXUXLiiAeGjgQ==');
-define('NONCE_KEY',        '5O9cjAJg8MOIP9E6RzD4Uo0cspI1tPHJ+YOt3L6jFYEoRKrSNEngfMWHN4SK5WO1N6N2AWEHrYuZ/d3dawrC3g==');
-define('AUTH_SALT',        'sx70+LFLWePeuSBfW4TZBEh8kcKzXCCRZgD9eVZohYuwp/CNojDOXZPvgchVcnT16muEEC9pCqBra55OoyUrPg==');
+define('AUTH_KEY', 'Gr2Apg9KETjfyzyD6qiZy9SRD7uDUK1OojtWKtiaQF7W4oZi9nYZgiRZjlp7rC9XSLxB4I/ipd8anyUWz8WRFg==');
+define('SECURE_AUTH_KEY', 'ZLgmxw7HrcNm+w916Z5WM5tbGBO0E1s5r3moqgHMOjhp1JK5qvE/o43Q0yrRcEsQvka6N27GBEuqKBd07hLCJA==');
+define('LOGGED_IN_KEY', 'IWNy35mtJanQYfXj4X06meCEMZPCoFbkPzdfvBzrAgH7NII0TD/WaNNJFbUZNS2lgCojnPdnnfXUXLiiAeGjgQ==');
+define('NONCE_KEY', '5O9cjAJg8MOIP9E6RzD4Uo0cspI1tPHJ+YOt3L6jFYEoRKrSNEngfMWHN4SK5WO1N6N2AWEHrYuZ/d3dawrC3g==');
+define('AUTH_SALT', 'sx70+LFLWePeuSBfW4TZBEh8kcKzXCCRZgD9eVZohYuwp/CNojDOXZPvgchVcnT16muEEC9pCqBra55OoyUrPg==');
 define('SECURE_AUTH_SALT', 'cHH5sb07EcyPzboKJ2os1SDtRurDWA+yPLSrH8ox3pCC4LQgNvu3I/Zi/kA6XmA2i4rgLs/dm6W4Vt0EZj58wA==');
-define('LOGGED_IN_SALT',   '/L0ucpRH+zOvv9lUU2FTgL8+Jd8niHN1OHGM9kJHqbhINfLdE70/I6neO/2lwx44lS1p4mo/VIbP2xXK/DgInA==');
-define('NONCE_SALT',       'aebw8heUpcpWbvs756rLNyxE4J4164OKz4iWyQ3Xq/n9hBkHUTf/nRiiksjNV2rGoXZ2Yxomyv0xTTVEy+XUgA==');
+define('LOGGED_IN_SALT', '/L0ucpRH+zOvv9lUU2FTgL8+Jd8niHN1OHGM9kJHqbhINfLdE70/I6neO/2lwx44lS1p4mo/VIbP2xXK/DgInA==');
+define('NONCE_SALT', 'aebw8heUpcpWbvs756rLNyxE4J4164OKz4iWyQ3Xq/n9hBkHUTf/nRiiksjNV2rGoXZ2Yxomyv0xTTVEy+XUgA==');
 
 /**
  * WordPress Database Table prefix.
@@ -72,7 +71,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 	$_SERVER['HTTPS'] = 'on';
 }
 
-define( 'WP_ENVIRONMENT_TYPE', 'local' );
+define('WP_ENVIRONMENT_TYPE', 'local');
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

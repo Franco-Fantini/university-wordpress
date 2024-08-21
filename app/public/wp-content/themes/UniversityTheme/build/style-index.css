@@ -40,10 +40,17 @@ li {
 .min-list {
   padding: 0;
   margin: 0;
+  display: flex;
 }
 .min-list li {
   list-style: none;
+  margin: 0 10px;
 }
+.min-list li:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
 .p-top-small {
   padding-top: 1rem;
 }
@@ -1463,7 +1470,7 @@ body.admin-bar .search-overlay {
   color: #f95738;
 }
 .metabox {
-  background-color: #faf0ca;
+  background-color: #f95838e4;
   border-radius: 3px;
   padding: 10px 15px;
   display: inline-block;
@@ -1477,6 +1484,8 @@ body.admin-bar .search-overlay {
 }
 .metabox--with-home-link {
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 .metabox__main {
   padding: 10px 15px 10px 11px;
@@ -1487,13 +1496,11 @@ body.admin-bar .search-overlay {
   color: #a79038;
 }
 .metabox a {
-  color: #a79038;
+  color: whitesmoke;
   text-decoration: none;
   font-weight: bold;
 }
-.metabox a:hover {
-  text-decoration: underline;
-}
+
 .metabox .metabox__blog-home-link {
   background-color: #0d3b66;
   color: #fff;
