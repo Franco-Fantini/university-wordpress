@@ -4,8 +4,9 @@ get_header(); ?>
 </div>
 <?php
 while (have_posts()) {
-    
+
     the_post(); ?>
+
     <div class="blog-banner">
         <div class="single-blog-banner__bg-image"
             style="background-image:url(<?php echo get_theme_file_uri('/images/blog-banner.jpg') ?>);">
@@ -22,17 +23,29 @@ while (have_posts()) {
             <div class="metabox metabox--position-up metabox--with-home-link">
                 <a class="metabox__blog-home-link" href="<?php echo site_url('/events') ?>"><i class="fa fa-home"
                         aria-hidden="true"></i>Back to the Events </a>
-                <div class="author-post">
-                    <address rel="author">
-                        Posted By <?php the_author_posts_link() ?> on
-                        <time><?php the_time('j/' . 'n/' . 'Y') ?></time>
-                    </address>
-                </div>
             </div>
             <h2 class="single-post-title">
                 <?php the_title(); ?>
             </h2>
             <?php the_content(); ?>
+
+            <?php
+
+            $relatedPrograms = get_field('related_programs');
+            if ($relatedPrograms) {
+                echo '<hr>';
+                echo '<ul class="min-list">';
+                echo '<h2>Related Programs</h2>';
+                foreach ($relatedPrograms as $program) { ?>
+
+                    <li><a class="text-white" href="<?php echo get_the_permalink($program); ?>">
+                            <?php echo get_the_title($program); ?>
+                        </a></li>
+
+                <?php }
+            }
+            echo '</ul>'
+                ?>
         </div>
 
     </section>

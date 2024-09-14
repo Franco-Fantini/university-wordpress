@@ -41,12 +41,18 @@
                 <p><?php echo wp_trim_words(get_the_content(), 20) ?> <a href="<?php the_permalink() ?>"
                         class="nu gray">Read more</a></p>
             </div>
+
         </div>
+
     <?php }
     wp_reset_postdata();
     ?>
 
-    <div class="pagination-link"><?php echo paginate_links(); ?> </div>
+    <div class="pagination_events container">
+        <div class="pagination-event-box">
+            <a href="<?php echo site_url('/past-events') ?>" class="generic-anchor-btn" href="">SEE PAST EVENTS</a>
+            <?php echo paginate_links(); ?>
+        </div>
 </section>
 
 <?php get_footer();

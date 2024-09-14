@@ -41,6 +41,7 @@ li {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-direction: column;
 }
 .min-list li {
   list-style: none;
@@ -1517,7 +1518,7 @@ body.admin-bar .search-overlay {
   position: absolute;
   padding: 14px 0 11px 0;
   color: #fff;
-  border-radius: 50%;
+  border-radius: 12px;
   background-color: #0d3b66;
   width: 80px;
   line-height: 1;
@@ -1682,8 +1683,6 @@ section .single-post-container {
   background-color: #0d3b66;
   color: whitesmoke;
   padding: 5%;
-
-  width: 100%;
 }
 .author-post {
   padding: 0 1rem;
@@ -1698,6 +1697,36 @@ section .single-post-container {
   color: whitesmoke;
   text-decoration: none;
 }
+.pagination_events {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.generic-anchor-btn {
+  background-color: #0d3b66;
+  padding: 1em;
+  border-radius: inherit;
+}
+.pagination_events a {
+  margin-right: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.pagination_events span {
+  margin-right: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+.pagination-event-box {
+  margin-top: 1rem;
+  display: flex;
+  background-color: #dd3f21;
+  opacity: 0.9;
+  width: fit-content;
+
+  align-items: center;
+}
+
 .page-banner__content.container {
   width: 1300px;
 }

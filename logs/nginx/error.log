@@ -1,2 +1,6 @@
 2024/08/20 12:24:00 [error] 24504#16936: *64 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.0", upstream: "fastcgi://127.0.0.1:10003", host: "university-template.local", referrer: "http://university-template.local/wp-login.php?redirect_to=http%3A%2F%2Funiversity-template.local%2Fwp-admin%2F&reauth=1"
 2024/08/20 12:24:00 [error] 24504#16936: *76 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host) while reading response header from upstream, client: 127.0.0.1, server: , request: "POST /wp-admin/upgrade.php?step=upgrade_db HTTP/1.0", upstream: "fastcgi://127.0.0.1:10003", host: "university-template.local"
+2024/08/30 08:46:45 [alert] 15900#17204: worker process 9992 exited with code C0000142
+2024/08/30 08:46:45 [alert] 15900#17204: could not respawn worker
+2024/09/02 09:04:01 [alert] 19004#14224: worker process 16120 exited with code C0000142
+2024/09/02 09:04:01 [alert] 19004#14224: could not respawn worker

@@ -6,7 +6,9 @@
     <div class="page-banner__content container t-center c-white">
         <h2 class="headline headline--large">Inspiration and discovery every day</h2>
         <p class="headline headline--medium">Here is where your journey begins.</p>
-        <a href="#" class="btn btn--large btn--blue banner--btn">Find Your Major</a>
+        <a href="<?php echo get_post_type_archive_link('program'); ?>" class="btn btn--large btn--blue banner--btn">Find
+            Your
+            Major</a>
     </div>
 </div>
 
